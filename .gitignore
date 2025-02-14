@@ -1,0 +1,19 @@
+# Pesos entrenados (demasiado grandes para git)
+models/*.weights
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Salidas de scripts
+results/iou_por_imagen.csv
+*_detectado.jpg
+*_detectado.png
+
+# Sistema
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
