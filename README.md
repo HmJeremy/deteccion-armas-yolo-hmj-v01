@@ -9,13 +9,9 @@ cámaras de vigilancia, usando una red neuronal convolucional YOLOv3
 entrenada con **Darknet** sobre un dataset propio, y corrida en producción
 con el módulo `cv2.dnn` de OpenCV.
 
-Este repositorio contiene el código de inferencia y evaluación de mi tesis
-de licenciatura **"Implementación de algoritmo de redes neuronales
+Este repositorio contiene el código de inferencia y evaluación de **"Implementación de algoritmo de redes neuronales
 convolucionales para la identificación anticipada de armas de fuego"**
-(Universidad Nacional Mayor de San Marcos, Facultad de Ciencias
-Matemáticas, Escuela Profesional de Computación Científica, 2025),
-reescrito y limpiado para que sea reutilizable fuera del entorno original
-de la tesis.
+(UNMSM - CC - 2025).
 
 <p align="center">
   <img src="results/samples/resultado_05.jpg" width="410" alt="Detección de arma parcialmente oculta">
@@ -67,7 +63,7 @@ filtrar por confianza ≥ umbral ──► Non-Maxima Suppression ──► caja
 
 ```bash
 git clone <url-de-este-repo>
-cd deteccion-armas-yolo-hmj
+cd deteccion-armas-yolo-hmj-v01
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -154,12 +150,6 @@ se verificó manualmente contra `results/samples/`.
 > explícitamente — sin ese pin, `pip install` de hoy en adelante instala una
 > versión que rompe este proyecto.
 
-## Limitaciones conocidas
-
-Ver la sección correspondiente en [`results/metrics.md`](results/metrics.md):
-el modelo generaliza bien a réplicas/juguetes con forma de arma, pero puede
-producir falsos positivos sobre objetos de silueta similar (usualmente con
-confianza baja, filtrable con el umbral).
 
 ## Cita
 
