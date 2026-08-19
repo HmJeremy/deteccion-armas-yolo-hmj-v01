@@ -18,16 +18,6 @@ convolucionales para la identificación anticipada de armas de fuego"**
   <img src="results/samples/resultado_20.jpg" width="410" alt="Detección de réplica de arma">
 </p>
 
-## Resultados
-
-| Métrica (set de prueba, 10 000 casos) | Valor |
-|---|---:|
-| Precisión | **91.2 %** |
-| Recall | **94.2 %** |
-| Exactitud | **92.6 %** |
-
-Detalle completo, matriz de confusión y curvas de entrenamiento en
-[`results/metrics.md`](results/metrics.md).
 
 ## Cómo funciona
 
